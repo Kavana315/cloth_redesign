@@ -4,4 +4,3 @@ __pycache__/
 *.keras
 AIG-Dataset/
 dataset/
-assets/
