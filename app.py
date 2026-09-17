@@ -18,7 +18,7 @@ st.set_page_config(
 # CONSTANTS
 # ============================================================
 IMG_SIZE = 224
-url="https://drive.google.com/file/d/1qJfZm_EpptB_meVZdLK4HpSV5jylTYgW/view?usp=sharing"
+url="https://drive.google.com/file/d/1qJfZm_EpptB_meVZdLK4HpSV5jylTYgW/view?usp=sharingf"
 MODEL_PATH = "cloth_classifier.keras"
 CLASS_NAMES_PATH = "class_names.json"
 ASSETS_DIR = "assets"
@@ -217,7 +217,7 @@ if uploaded_file is not None:
     col1, col2 = st.columns([1, 1])
 
     with col1:
-        st.image(image, caption="Your Uploaded Garment", use_container_width=True)
+        st.image(image, caption="Your Uploaded Garment", use_column_width=True)
 
     # ---------- Predict ----------
     with st.spinner("Analyzing garment..."):
@@ -264,7 +264,7 @@ if uploaded_file is not None:
                         st.image(
                             img_path,
                             caption=f"Preview: {idea['title']}",
-                            use_container_width=True
+                            use_column_width=True
                         )
                     else:
                         # Placeholder box if image is missing
